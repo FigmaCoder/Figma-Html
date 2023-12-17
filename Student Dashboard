@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      width: 40px; /* Increased icon size */
+      height: 40px; /* Increased icon size */
+      margin-left: 10px; /* Add spacing between profile icon and settings icon */
+    }
+
+    /* Clear floats after the columns */
+    .card:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .icon-box {
+      background-color: #3498db; /* Change the background color */
+      border-radius: 8px;
+      margin: 0 10px 10px 0; /* Add some space between each box */
+      float: left;
+      width: calc(33.33% - 10px); /* Adjusted width to make it responsive */
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      height: 120px; /* Increased height of the icon-box */
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px; /* Add some space between text and icon */
+    }
+
+    .icon-inside {
+      width: 60px; /* Increased icon size */
+      height: 60px; /* Increased icon size */
+      margin-bottom: 10px; /* Add some space between text and icon */
+    }
+
+    .icon-box a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      height: 100%;
+    }
+
+    section {
+      flex: 1; /* Fill the available space */
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      height: 100%
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Dashboard</h1>
+    <div class="header-icons">
+      <img src="https://cdn0.iconfinder.com/data/icons/business-and-management-line-18/24/profile-256.png" alt="Profile Icon" class="icon">
+      <img src="https://cdn0.iconfinder.com/data/icons/for-your-ui-1/512/options_settings_more_setting-512.png" alt="Settings Icon" class="icon">
+    </div>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Welcome, [Student Name]!</h2>
+      <div class="icon-box"><a href="C:\\Users\\mahim\\Desktop\\ITLGU\\TIA132\\My Learning.html"><img src="https://cdn0.iconfinder.com/data/icons/school-198/48/school222_bold-07-512.png" alt="My Learning Icon" class="icon-inside"> <span>My Learning</span></a></div>
+      <div class="icon-box"><a href="#"><img src="https://cdn3.iconfinder.com/data/icons/school-solid-icons-vol-2/96/094-512.png" alt="Pin Board Icon" class="icon-inside"> <span>Pin Board</span></a></div>
+      <div class="icon-box"><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/populus/160/online-chat-512.png" alt="Discussion Forum Icon" class="icon-inside"> <span>Discussion Forum</span></a></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 E-Learning Management System</p>
+  </footer>
+
+</body>
+</html>
